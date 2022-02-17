@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background: hsl(270, 20%, 96%);
+}
+
+/* ==========background========== */
+.white-bg {
+}
+.violet-design {
+  background-image: linear-gradient(
+    hsl(290, 100%, 45%),
+    40%,
+    hsl(264, 100%, 61%)
+  );
+  width: 50%;
+  height: 500px;
+  border-bottom-right-radius: 250px;
+  padding: 20px 20px -100px 20px;
+}
+
+/* ==========background========== */
+
+/* =============phone-body============= */
+
+.phone-border {
+  width: 260px;
+  height: 530px;
+  background: hsl(270, 20%, 96%);
+  border: 13px white solid;
+  border-radius: 2em;
+  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.1);
+  padding: auto;
+  margin: -450px auto;
+}
+/* =============phone-body============= */
+
+/* ==========phone-navbar========== */
+
+.nav-header {
+  width: 260px;
+  height: 80px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-image: linear-gradient(
+    to left,
+    hsl(308, 85%, 63%),
+    60%,
+    hsl(264, 100%, 61%)
+  );
+}
+
+.white-upper-bar {
+  width: 50%;
+  height: 20px;
+  background: white;
+  margin: auto;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  clear: left;
+}
+
+.navbar-content-holder {
+  height: 55px;
+  margin-top: 5px;
+  display: flex;
+}
+/* ======phone-navber-content====== */
+
+#btn {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+}
+
+.back-btn-mar {
+  margin: 17px 10px;
+}
+
+.back-button {
+  text-align: center;
+  width: 35px;
+  height: 40px;
+}
+
+.porfile {
+  width: 25px;
+  height: 25px;
+  border-radius: 5em;
+  border: 2px solid white;
+  margin: auto 5px;
+}
+
+.name-status-holder {
+  color: white;
+  margin: auto 6px;
+}
+
+.name {
+  margin: 0px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.status {
+  margin: 0px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.settting-botton {
+}
+
+/* ======phone-navber-content====== */
+
+/* ==========phone-navbar========== */
