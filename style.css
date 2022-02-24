@@ -3,13 +3,17 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   background: hsl(270, 20%, 96%);
 }
 
-/* ==========background========== */
-.white-bg {
+main {
+  height: 110vh;
+  width: 100vw;
 }
+
+/* ==========background========== */
+
 .violet-design {
   background-image: linear-gradient(
     hsl(290, 100%, 45%),
@@ -27,12 +31,12 @@ body {
 /* =============phone-body============= */
 
 .phone-border {
-  width: 260px;
-  height: 530px;
+  width: 290px;
+  height: 600px;
   background: hsl(270, 20%, 96%);
   border: 13px white solid;
   border-radius: 2em;
-  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.2);
   padding: auto;
   margin: -450px auto;
 }
@@ -41,8 +45,9 @@ body {
 /* ==========phone-navbar========== */
 
 .nav-header {
-  width: 260px;
-  height: 80px;
+  width: 290px;
+  height: 75px;
+  margin-bottom: 10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 5px;
@@ -66,13 +71,13 @@ body {
 }
 
 .navbar-content-holder {
-  height: 55px;
-  margin-top: 5px;
+  height: 45px;
+  margin-top: 4px;
   display: flex;
 }
 /* ======phone-navber-content====== */
 
-#btn {
+i {
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -81,6 +86,8 @@ body {
 
 .left {
   transform: rotate(135deg);
+  margin-bottom: 3.5px;
+  margin-left: 10px;
 }
 
 .back-btn-mar {
@@ -103,25 +110,210 @@ body {
 
 .name-status-holder {
   color: white;
-  margin: auto 6px;
+  margin: auto 10px;
 }
 
 .name {
   margin: 0px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .status {
   margin: 0px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+  color: hsl(276, 100%, 81%);
 }
 
-.settting-botton {
+.menu-button-holder {
+  width: 50px;
+  margin: auto;
+}
+
+.menu-icon {
+  width: 2px;
+  height: 2px;
+  background: white;
+  margin: 3px 0 0 40px;
 }
 
 /* ======phone-navber-content====== */
 
 /* ==========phone-navbar========== */
+
+/*===========convo-holder============*/
+
+.convo-holder {
+  width: 270px;
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/*============chat-log==============*/
+.customer-service {
+  background: rgb(231, 231, 231);
+  color: hsl(276, 66%, 64%);
+  height: 40px;
+  margin: 0 0 10px 0;
+  border-radius: 10px 10px 10px 3px;
+}
+
+.client {
+  margin: 0 0 10px 0;
+  width: 100px;
+  height: 40px;
+  background: white;
+}
+
+.client-dog-img {
+  margin: 0 0 10px 90px;
+  display: flex;
+  flex-direction: row;
+  width: 180px;
+  height: 50px;
+}
+
+.convo-1 {
+  width: 170px;
+  height: 40px;
+  padding: 5px 0 0px 10px;
+}
+.convo-2 {
+  width: 172px;
+  height: 40px;
+  padding: 5px 0 0px 10px;
+}
+
+.doggo {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.convo-3 {
+  width: 140px;
+  padding: 5px 0 0 10px;
+  margin: 0 0 10px 44.5%;
+  border-radius: 10px 10px 3px 10px;
+}
+.convo-4 {
+  width: 110px;
+  height: 25px;
+  padding: 8px 0 0 10px;
+  margin: 0 0 10px 55.6%;
+  border-radius: 10px 10px 3px 10px;
+}
+.convo-5 {
+  width: 165px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+}
+
+.spacer {
+  width: 13px;
+  height: 13px;
+  border: 2px solid hsl(289, 100%, 72%);
+  border-radius: 2em;
+  margin: 11.2px 10px 0 10px;
+}
+
+.service-option {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  border-radius: 10px 10px 10px 3px;
+  background-image: linear-gradient(
+    to right,
+    hsl(308, 85%, 63%),
+    60%,
+    hsl(264, 100%, 61%)
+  );
+}
+
+.convo-6 {
+  width: 200px;
+  height: 40px;
+  margin: 0 0 10px 0;
+}
+.convo-7 {
+  width: 200px;
+  height: 40px;
+}
+
+.placeholder {
+  width: 270px;
+  height: 50px;
+  margin-top: 20px;
+  background: white;
+  border: none;
+  border-radius: 2em;
+  display: flex;
+}
+
+.price-spacer1 {
+  padding-left: 30px;
+  font-weight: 700;
+  font-size: 15px;
+}
+.price-spacer2 {
+  padding-left: 55px;
+  font-weight: 700;
+  font-size: 15px;
+}
+.message-holder {
+  padding: 7px 0 0 20px;
+  color: hsl(206, 6%, 79%);
+}
+
+.send-button-holder {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 109px;
+  border-radius: 2rem;
+  background-color: hsl(271, 36%, 24%);
+}
+
+.right {
+  transform: rotate(-45deg);
+  margin-top: 4px;
+  margin-right: 4.5px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+/*============chat-log==============*/
+
+/*===========convo-holder============*/
+
+/*===========description============ */
+.description-holder {
+  margin-top: 500px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+.heading {
+  font-size: 45px;
+  font-weight: 500;
+  margin: 50px 0 30px 0;
+  color: hsl(271, 36%, 24%);
+}
+
+.desc {
+  font-size: 16px;
+  padding: 0 30px;
+  word-spacing: 2px;
+  line-height: 23px;
+  color: hsl(270, 7%, 64%);
+}
