@@ -3,13 +3,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100vw;
-  height: 110vh;
+  height: 100vh;
   background: hsl(270, 20%, 96%);
 }
 
 main {
-  height: 110vh;
   width: 100vw;
+  height: 100vh;
 }
 
 /* ==========background========== */
@@ -23,7 +23,10 @@ main {
   width: 50%;
   height: 500px;
   border-bottom-right-radius: 250px;
+  border-bottom-left-radius: 250px;
   padding: 20px 20px -100px 20px;
+  position: relative;
+  right: 50px;
 }
 
 /* ==========background========== */
@@ -38,7 +41,12 @@ main {
   border-radius: 2em;
   box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.2);
   padding: auto;
-  margin: -450px auto;
+  top: 5%;
+  left: 3.5%;
+  right: 3.5%;
+  margin: auto;
+
+  position: absolute;
 }
 /* =============phone-body============= */
 
@@ -298,7 +306,7 @@ i {
 
 /*===========description============ */
 .description-holder {
-  margin-top: 500px;
+  margin-top: 200px;
   text-align: center;
   font-family: "Rubik", sans-serif;
 }
@@ -306,7 +314,7 @@ i {
 .heading {
   font-size: 45px;
   font-weight: 500;
-  margin: 50px 0 30px 0;
+  margin: 30px 0 30px 0;
   color: hsl(271, 36%, 24%);
 }
 
@@ -316,4 +324,342 @@ i {
   word-spacing: 2px;
   line-height: 23px;
   color: hsl(270, 7%, 64%);
+}
+
+.attribution {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  top: 120%;
+  left: 5%;
+}
+/*===========description============ */
+
+/*==============media-query=========== */
+
+@media screen and (min-width: 804px) {
+  body {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .violet-design {
+    background-image: linear-gradient(
+      hsl(290, 100%, 45%),
+      40%,
+      hsl(264, 100%, 61%)
+    );
+    max-width: 400px;
+    min-width: 250px;
+    height: 600px;
+    border-radius: 0 0 250px 250px;
+    padding: 20px 20px -100px 20px;
+    position: relative;
+    right: 50px;
+  }
+
+  /*=================background=============*/
+  /*================phone-body=============*/
+  .phone-border {
+    width: 240px;
+    height: 500px;
+    background: hsl(270, 20%, 96%);
+    border: 13px white solid;
+    border-radius: 2em;
+    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.2);
+
+    top: 30px;
+    left: 20%;
+
+    position: absolute;
+  }
+
+  .stack-top {
+    z-index: 9;
+    margin: 20px;
+  }
+
+  /*================phone-body=============*/
+  /* ==========phone-navbar========== */
+
+  .nav-header {
+    width: 240px;
+    height: 65px;
+    margin-bottom: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-image: linear-gradient(
+      to left,
+      hsl(308, 85%, 63%),
+      60%,
+      hsl(264, 100%, 61%)
+    );
+  }
+
+  .white-upper-bar {
+    width: 50%;
+    height: 20px;
+    background: white;
+    margin: auto;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    clear: left;
+  }
+
+  .navbar-content-holder {
+    height: 35px;
+    margin-top: 4px;
+    display: flex;
+  }
+
+  i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .left {
+    transform: rotate(135deg);
+    margin-bottom: 3.5px;
+    margin-left: 10px;
+  }
+
+  .back-btn-mar {
+    margin: 11px 8px 0 9px;
+  }
+
+  .back-button {
+    text-align: center;
+    width: 35px;
+    height: 40px;
+  }
+
+  .menu-button-holder {
+    width: 50px;
+    margin: auto;
+  }
+
+  .menu-icon {
+    width: 2px;
+    height: 2px;
+    background: white;
+    margin: 3px 0 0 30px;
+  }
+  /* ======phone-navber-content====== */
+  /*===========convo-holder============*/
+
+  .convo-holder {
+    width: 220px;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  /*============chat-log==============*/
+  /*============chat-log==============*/
+  .customer-service {
+    background: rgb(231, 231, 231);
+    color: hsl(276, 66%, 64%);
+    height: 40px;
+    margin: 0 0 10px 0;
+    border-radius: 10px 10px 10px 3px;
+  }
+
+  .client {
+    margin: 0 0 10px 0;
+    width: 100px;
+    height: 40px;
+    font-size: 11px;
+    background: white;
+  }
+
+  .client-dog-img {
+    margin: 0 0 10px 70px;
+    display: flex;
+    flex-direction: row;
+    width: 160px;
+    height: 50px;
+  }
+
+  .convo-1 {
+    width: 170px;
+    height: 40px;
+    padding: 5px 0 0px 10px;
+  }
+  .convo-2 {
+    width: 172px;
+    height: 40px;
+    padding: 5px 0 0px 10px;
+  }
+
+  .doggo {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+
+  .convo-3 {
+    width: 140px;
+    padding: 6px 0 0px 10px;
+    margin: 0 0 10px 32%;
+    border-radius: 10px 10px 3px 10px;
+  }
+  .convo-4 {
+    width: 110px;
+    height: 27px;
+    padding: 7px 0 0px 10px;
+    margin: 0 0 10px 45.5%;
+    border-radius: 10px 10px 3px 10px;
+  }
+  .convo-5 {
+    width: 165px;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .spacer {
+    width: 13px;
+    height: 13px;
+    border: 2px solid hsl(289, 100%, 72%);
+    border-radius: 2em;
+    margin: 11.2px 10px 0 10px;
+  }
+
+  .service-option {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    border-radius: 10px 10px 10px 3px;
+    background-image: linear-gradient(
+      to right,
+      hsl(308, 85%, 63%),
+      60%,
+      hsl(264, 100%, 61%)
+    );
+  }
+
+  .convo-6 {
+    width: 200px;
+    height: 40px;
+    margin: 0 0 7px 0;
+  }
+  .convo-7 {
+    width: 200px;
+    height: 40px;
+  }
+
+  .option {
+    margin: 5px 04px 0;
+  }
+
+  .spacer {
+    margin: 7px 7px 0 7px;
+  }
+
+  .price-spacer1 {
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .price-spacer2 {
+    padding-left: 55px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .placeholder {
+    width: 220px;
+    height: 45px;
+    margin-top: 10px;
+    background: white;
+    border: none;
+    border-radius: 2em;
+    display: flex;
+  }
+
+  .message-holder {
+    margin-right: 68px;
+    padding: 3px 0 0 20px;
+    color: hsl(206, 6%, 79%);
+  }
+
+  .send-button-holder {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+
+    margin-left: 0px;
+    border-radius: 2rem;
+    background-color: hsl(271, 36%, 24%);
+  }
+
+  .button-arrow {
+    margin-top: 7px;
+  }
+
+  .right {
+    transform: rotate(-45deg);
+    margin-top: 4px;
+    margin-right: 4.5px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  /*============chat-log==============*/
+  /*================description=============*/
+
+  .description-holder {
+    max-width: 470px;
+    min-width: 280px;
+    height: 300px;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    position: absolute;
+    text-align: left;
+    margin: 10px;
+    top: 30%;
+    left: 55%;
+  }
+
+  .heading {
+    font-size: 45px;
+    font-weight: 500;
+    margin: 30px 0 30px 0;
+    color: hsl(271, 36%, 24%);
+  }
+
+  .desc {
+    font-size: 16px;
+    padding: 0;
+    word-spacing: 2px;
+    line-height: 23px;
+    color: hsl(270, 7%, 64%);
+  }
+
+  .attribution {
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    position: absolute;
+    top: 97%;
+    left: 1%;
+  }
+  /*================description=============*/
 }
